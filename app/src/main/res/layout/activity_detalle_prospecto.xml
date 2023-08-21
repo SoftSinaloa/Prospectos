@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Prueba nombre"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNombre"
+        android:text="Prueba AP"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/textViewCalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba Calle"
+        android:layout_below="@id/textViewApellidos"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/textViewNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba Num"
+        android:layout_below="@id/textViewCalle"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/textViewCol"
+        android:layout_width="wrap_content"
+        android:text="Prueba Col"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewNum"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prueba Tel"
+        android:layout_below="@id/textViewCol"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewEstatus"
+        android:layout_width="wrap_content"
+        android:text="Prueba Estatus"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTelefono"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/textViewObservaciones"
+        android:layout_width="wrap_content"
+        android:text="Prueba Observaciones"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewEstatus"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/rejectedColor"
+        android:textSize="16sp"/>
+
+
+
+</RelativeLayout>

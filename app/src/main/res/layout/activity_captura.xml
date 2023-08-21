@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CapturaActivity">
+
+    <TextView
+        android:id="@+id/txtNomCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Captura los datos del prospecto"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="12"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/txtNomCap"
+        app:layout_constraintStart_toStartOf="@+id/txtNomCap"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomCap" />
+
+    <EditText
+        android:id="@+id/etApep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Apellido Paterno"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNom"
+        app:layout_constraintStart_toStartOf="@+id/etNom"
+        app:layout_constraintTop_toBottomOf="@+id/etNom" />
+
+    <EditText
+        android:id="@+id/etApem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Apellido Materno"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etApep"
+        app:layout_constraintStart_toStartOf="@+id/etApep"
+        app:layout_constraintTop_toBottomOf="@+id/etApep" />
+
+    <EditText
+        android:id="@+id/etCalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Calle"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etApem"
+        app:layout_constraintStart_toStartOf="@+id/etApem"
+        app:layout_constraintTop_toBottomOf="@+id/etApem" />
+
+    <EditText
+        android:id="@+id/etNumCasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Num Casa"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etCalle"
+        app:layout_constraintStart_toStartOf="@+id/etCalle"
+        app:layout_constraintTop_toBottomOf="@+id/etCalle" />
+
+    <EditText
+        android:id="@+id/etCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Colonia"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNumCasa"
+        app:layout_constraintStart_toStartOf="@+id/etNumCasa"
+        app:layout_constraintTop_toBottomOf="@+id/etNumCasa" />
+
+    <EditText
+        android:id="@+id/etCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Codigo Postal"
+        android:inputType="number"
+        android:maxLength="5"
+        android:phoneNumber="true"
+        app:layout_constraintEnd_toEndOf="@+id/etCol"
+        app:layout_constraintStart_toStartOf="@+id/etCol"
+        app:layout_constraintTop_toBottomOf="@+id/etCol" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Telefono"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/etCP"
+        app:layout_constraintStart_toStartOf="@+id/etCP"
+        app:layout_constraintTop_toBottomOf="@+id/etCP" />
+    <EditText
+        android:id="@+id/etRFC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="RFC"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etTelefono"
+        app:layout_constraintStart_toStartOf="@+id/etTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/etTelefono" />
+
+    <Button
+        android:id="@+id/btnSelectDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#807D7D"
+        android:text="Seleccionar Documento"
+        app:layout_constraintEnd_toEndOf="@+id/etRFC"
+        app:layout_constraintStart_toStartOf="@+id/etRFC"
+        app:layout_constraintTop_toBottomOf="@+id/etRFC" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="@+id/btnSelectDocument"
+        app:layout_constraintStart_toStartOf="@+id/btnSelectDocument"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectDocument" />
+</androidx.constraintlayout.widget.ConstraintLayout>
